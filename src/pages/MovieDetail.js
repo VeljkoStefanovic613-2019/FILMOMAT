@@ -14,7 +14,11 @@ useEffect (() => {
     setMovie(json);
   }
   fetchMovie();
-}, [])
+}, []);
+
+useEffect(() => {
+  document.title = `${movie.title} / Filmomat`
+});
 
   return (
     <main>
