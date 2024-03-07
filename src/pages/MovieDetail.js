@@ -16,7 +16,7 @@ useEffect (() => {
     setMovie(json);
   }
   fetchMovie();
-}, []);
+}, [params.id]);
 
 
   return (
