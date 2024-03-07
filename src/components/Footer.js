@@ -15,10 +15,10 @@ export const Footer = () => {
                     <a href="https://www.linkedin.com/in/veljko-stefanovic-83a8b1128/" target="_blank" rel="noreferrer" className="hover:underline me-4 md:me-6">LinkedIn</a>
                 </li>
                 <li>
-                    <a href="#" target="_blank" rel="noreferrer" className="hover:underline me-4 md:me-6">Licensing</a>
+                    <a href="https://www.instagram.com/veljko.stefanovic_scg/" target="_blank" rel="noreferrer" className="hover:underline me-4 md:me-6">Licensing</a>
                 </li>
                 <li>
-                    <a href="#" target="_blank" rel="noreferrer" className="hover:underline">Contact</a>
+                    <a href="https://www.instagram.com/veljko.stefanovic_scg/" target="_blank" rel="noreferrer" className="hover:underline">Contact</a>
                 </li>
             </ul>
             </div>
