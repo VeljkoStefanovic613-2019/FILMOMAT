@@ -3,6 +3,7 @@ import PageNotFoundImage from "../assets/images/pagenotfound.png"
 import { Button } from "../components/Button";
 import { useEffect } from "react";
 
+
 export const PageNotFound = () => {
 
 useEffect(() => {
