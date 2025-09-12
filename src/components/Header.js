@@ -25,6 +25,7 @@ export const Header = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const queryTerm = event.target.search.value;
+    setHidden(!hidden);
     event.target.reset();
     return navigate(`/search?q=${queryTerm}`);
   }
@@ -72,16 +73,16 @@ export const Header = () => {
               </div>
               <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
-                  <NavLink to="/" className={({isActive}) => isActive ? activeClass : inActiveClass } end>Home</NavLink>
+                  <NavLink to="/" onClick={() => setHidden(!hidden)} className={({isActive}) => isActive ? activeClass : inActiveClass } end>Home</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/movies/popular" className={({isActive}) => isActive ? activeClass : inActiveClass }>Popular</NavLink>
+                  <NavLink to="/movies/popular" onClick={() => setHidden(!hidden)} className={({isActive}) => isActive ? activeClass : inActiveClass }>Popular</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/movies/top" className={({isActive}) => isActive ? activeClass : inActiveClass }>Top Rated</NavLink>
+                  <NavLink to="/movies/top" onClick={() => setHidden(!hidden)} className={({isActive}) => isActive ? activeClass : inActiveClass }>Top Rated</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/movies/upcoming" className={({isActive}) => isActive ? activeClass : inActiveClass }>Upcoming</NavLink>
+                  <NavLink to="/movies/upcoming" onClick={() => setHidden(!hidden)} className={({isActive}) => isActive ? activeClass : inActiveClass }>Upcoming</NavLink>
                 </li>
               </ul>
             </div>
