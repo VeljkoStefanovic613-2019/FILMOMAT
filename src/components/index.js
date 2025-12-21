@@ -5,3 +5,5 @@ export { Card } from "./Card";
 export { Button } from "./Button";
 
 export { ScrollToTop } from "./ScrollToTop";
+
+export { TVCard } from "./TVCard";

@@ -3,3 +3,6 @@ export { MovieDetail } from "./MovieDetail";
 export { Search } from "./Search";
 
 export { PageNotFound } from "./PageNotFound";
+
+export { TVList } from "./TVList";
+export { TVDetail } from "./TVDetail";

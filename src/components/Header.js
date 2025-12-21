@@ -76,6 +76,9 @@ export const Header = () => {
                   <NavLink to="/" onClick={() => setHidden(!hidden)} className={({isActive}) => isActive ? activeClass : inActiveClass } end>Home</NavLink>
                 </li>
                 <li>
+    <NavLink to="/tv" onClick={() => setHidden(!hidden)} className={({isActive}) => isActive ? activeClass : inActiveClass }>TV Shows</NavLink>
+  </li>
+                <li>
                   <NavLink to="/movies/popular" onClick={() => setHidden(!hidden)} className={({isActive}) => isActive ? activeClass : inActiveClass }>Popular</NavLink>
                 </li>
                 <li>

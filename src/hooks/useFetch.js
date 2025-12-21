@@ -6,7 +6,8 @@ export const useFetch = (apiPath, queryTerm = "") => {
   const [error, setError] = useState(null);
 
   const url = `https://api.themoviedb.org/3/${apiPath}?api_key=${process.env.REACT_APP_API_KEY}${
-    queryTerm ? `&query=${queryTerm}` : ""
+    queryTerm ? `&query=${encodeURIComponent(queryTerm)}` : ""
+
   }`;
 
   useEffect(() => {
